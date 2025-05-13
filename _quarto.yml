@@ -1,7 +1,7 @@
 project:
   type: website
 
-  preview: 
+  preview:
     port: 5555
     browser: true
     watch-inputs: true
@@ -16,12 +16,7 @@ project:
     - "files/**"
     - "etc/**"
 
-    # Things that need to be at the site root
-    - ".htaccess"
-    - "LiveSearchSiteAuth.xml"
-    - "keybase.txt"
-    - "y_key_31e0c4105fc75710.html"
-    - "pgp_ath.asc.txt"
+    # Things that need to be at the site root. Use this space for potential verification files.
 
 freeze: true
 
@@ -29,28 +24,18 @@ bibliography: files/bib/references.bib
 csl: files/bib/chicago-author-date.csl
 
 # Metadata stuff
-pagetitle: "{{< meta title >}} | Andrew Heiss"
-author-meta: "Andrew Heiss"
+pagetitle: "{{< meta title >}} | Jim Junker"
+author-meta: "Jim Junker"
 
 website:
-  title: "Andrew Heiss"
-  description: "Andrew Heiss is an assistant professor at Georgia State University, researching international NGOs and teaching data science & economics."
+  title: "Jim Junker"
+  description: "Jim Junker is an ecologist and Research Assistant Professor at the University of North Texas studying aquatic ecosystem ecology."
   favicon: "/files/favicon-512.png"
-  site-url: "https://www.andrewheiss.com"
-  repo-url: "https://github.com/andrewheiss/ath-quarto"
+  site-url: "https://www.jimjunker.com"
+  repo-url: "https://github.com/jimjunker/jimjunker-website"
 
-  google-analytics: "UA-527449-5"
+  google-analytics: ""
 
-  twitter-card: 
-    image: "/files/profiles/twitter-card-large.png"
-    card-style: summary_large_image
-    creator: "@andrewheiss"
-    site: "@andrewheiss"
-
-  open-graph: 
-    image: "/files/profiles/twitter-card-large.png"
-    locale: en_US
-  
   navbar:
     pinned: true
 
@@ -67,50 +52,34 @@ website:
         href: "teaching/index.qmd"
       - text: "Talks"
         href: "talks/index.qmd"
-      - text: "Now"
-        href: now/index.qmd
-      - text: "Uses"
-        file: uses/index.qmd
-    
+
     right:
       - text: "{{< iconify bi rss size=1.1em title='RSS' >}}"
         href: atom.xml
       - text: "{{< iconify bi envelope size=1.1em title='E-mail' >}}"
-        href: "mailto:aheiss@gsu.edu"
+        href: "mailto:james.junker@unt.edu"
       - text: "{{< iconify fa6-brands bluesky size=1.1em title='Bluesky' >}}"
-        href: https://bsky.app/profile/andrew.heiss.phd
-        rel: me
-      - text: "{{< iconify bi mastodon size=1.1em title='Mastodon' >}}"
-        href: https://fediscience.org/users/andrew/
+        href: https://bsky.app/profile/jimjunker.bsky.social
         rel: me
       - text: "{{< iconify bi github size=1.1em title='GitHub' >}}"
-        href: https://github.com/andrewheiss
+        href: https://github.com/jimjunker1
         rel: me
-      - text: "{{< iconify bi youtube size=1.1em title='YouTube' >}}"
-        href: https://www.youtube.com/andrewheiss
-        rel: me
-      - text: "{{< iconify fa6-brands blogger size=1.15em title='Blogger' >}}"
-        href: https://www.heissatopia.com/
-      - text: "{{< iconify bi linkedin size=1.1em title='LinkedIn' >}}"
-        href: https://www.linkedin.com/in/andrewheiss
-        rel: me
-  
+
   page-footer:
     left: |
-      <span class="faux-block">{{< fa brands creative-commons >}} {{< var years >}} Andrew Heiss</span>
-      <span class="faux-block">All content licensed under<br>[{{< fa brands creative-commons >}} {{< fa brands creative-commons-by >}} Creative Commons CC BY 4.0](https://creativecommons.org/licenses/by/4.0/)</span>      
+      <span class="faux-block">{{< fa brands creative-commons >}} {{< var years >}} James Junker</span>
+      <span class="faux-block">All content licensed under<br>[{{< fa brands creative-commons >}} {{< fa brands creative-commons-by >}} Creative Commons CC BY 4.0](https://creativecommons.org/licenses/by/4.0/)</span>
     center: |
       <span class="faux-block">{{< fa brands orcid >}} <strong>ORCID</strong> [{{< var orcid >}}](https://orcid.org/{{< var orcid >}})</span>
-      <span class="faux-block">{{< fa key >}} [PGP public key]({{< var pgp.key >}}) &emsp; {{< fa fingerprint >}} Fingerprint:</strong><br><span class="fingerprint">{{< var pgp.fingerprint >}}</span></span>
     right: |
       <span class="faux-block">Made with {{< fa brands r-project >}} and [Quarto](https://quarto.org/)</span>
       <span class="faux-block">[View the source at {{< fa brands github >}} GitHub]({{< var github-url >}})</span>
 
 format:
   html:
-    theme: 
+    theme:
       - html/ath.scss
-    grid: 
+    grid:
       body-width: 900px
     toc: false
     code-link: true

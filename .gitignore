@@ -15,3 +15,6 @@ static/etc/*
 .DS_Store
 
 /.luarc.json
+.Rdata
+.httr-oauth
+.quarto

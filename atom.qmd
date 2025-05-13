@@ -1,11 +1,11 @@
 ---
-title: "Andrew Heiss's blog"
+title: "Jim Junker's blog"
 search: false
 listing:
   sort: "date desc"
   feed: 
-    title: "Andrew Heiss's blog"
-    description: "Andrew Heiss's blog"
+    title: "Jim Junker's blog"
+    description: "Place for musings"
     items: 60
     type: full
     language: en
